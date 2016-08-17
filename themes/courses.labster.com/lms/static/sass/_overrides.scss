@@ -238,6 +238,23 @@ body header.global {
   border-bottom: $labster-black;
   height: 64px;
 
+  .user {
+    background-color: $gray-3;
+  }
+
+  .user {
+    &:focus, &:hover, &:active {
+      background-color: $labster-white
+    }
+  }
+
+  .user > .primary > a {
+    &, &:focus, &:hover, &:active {
+      background: none;
+      box-shadow: none;
+    }
+  }
+
   .user > .primary:last-child > a {
     padding: 4px 10px 11px;
     line-height: 17px;

@@ -8,6 +8,7 @@ from django.utils.translation import ugettext as _
        data-uv-forum-id="215077">${_("Help")}</a>
 </div>
 
+<%block name="js_extra">
 <!-- begin script live chat -->
 <script type="text/javascript">
   var __lc = {};
@@ -41,3 +42,4 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     $('#uvTab').hide();
   }
 </script>
+</%block>
