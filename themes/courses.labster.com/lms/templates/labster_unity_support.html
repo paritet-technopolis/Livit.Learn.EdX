@@ -1,3 +1,7 @@
+<%!
+from django.utils.translation import ugettext as _
+%>
+
 ## Only COURSEWARE page has both `course` and `COURSE_TITLE` parameters.
 % if 'course' in context.keys() and 'COURSE_TITLE' in context.keys():
 <div id="unity-browser-support" class="wrapper-msg urgency-low warning" style="display:none;">
