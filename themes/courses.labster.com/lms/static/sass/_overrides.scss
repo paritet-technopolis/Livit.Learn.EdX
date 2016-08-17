@@ -52,15 +52,13 @@ $black-80: #585858;
 //  Font Assignment
 //-----------------
 
-$theme-sans-font: 'Source Sans';
-$labster-font: 'Lato';
+$theme-sans-font: 'Source Sans', Verdana;
+$labster-font: 'Lato', 'Open Sans', Verdana;
 $sans-serif: $labster-font, $theme-sans-font;
 $body-font-family: $sans-serif;
 
 $theme-serif-font: 'Crimson Text', 'Georgia';
 $serif: $labster-font, $theme-serif-font;
-
-
 
 
 //-----------------
@@ -474,6 +472,7 @@ body header.global {
 }
 
 body header.global.slim {
+  background: $header-bg;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 
