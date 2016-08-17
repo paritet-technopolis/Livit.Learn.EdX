@@ -53,19 +53,10 @@ from microsite_configuration.templatetags.microsite import platform_name
               <a href="https://labster.com/${link[0]}">${link[1]}</a>
             </li>
           % endfor
-
-          %if marketing_link('JOBS') and marketing_link('JOBS') != '#':
-            <li class="nav-colophon-02">
-              <a id="jobs" href="${marketing_link('JOBS')}">
-                ${_("Jobs")}
-              </a>
-            </li>
-          %endif
-
         % endif
       </ol>
       </nav>
-
+<%doc>
       <div class="wrapper-logo">
         <p>
           <a href="/">
@@ -75,7 +66,7 @@ from microsite_configuration.templatetags.microsite import platform_name
           </a>
         </p>
       </div>
-
+</%doc>
       <p class="copyright">&copy; ${settings.COPYRIGHT_YEAR} ${settings.PLATFORM_NAME}.</p>
 
       ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
@@ -86,6 +77,7 @@ from microsite_configuration.templatetags.microsite import platform_name
             link_end=u"</a>"
         )}
       </p>
+<%doc>
       <nav class="nav-legal" aria-label="${_('Legal')}">
         <ul>
         % if marketing_link('HONOR') and marketing_link('HONOR') != '#':
@@ -114,7 +106,7 @@ from microsite_configuration.templatetags.microsite import platform_name
         </ul>
       </nav>
     </div>
-
+</%doc>
     ## please leave this link and use one of the logos provided
     <div class="footer-about-openedx">
       <p>
