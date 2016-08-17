@@ -49,11 +49,9 @@ from microsite_configuration.templatetags.microsite import platform_name
             )
           %>
           % for item_num, link in enumerate(footer_links, start=1):
-            %if marketing_link(link[0]) and marketing_link(link[0]) != '#':
-              <li class="nav-colophon-0${item_num}">
-                <a href="https://labster.com/${link[0]}">${link[1]}</a>
-              </li>
-            %endif
+            <li class="nav-colophon-0${item_num}">
+              <a href="https://labster.com/${link[0]}">${link[1]}</a>
+            </li>
           % endfor
 
           %if marketing_link('JOBS') and marketing_link('JOBS') != '#':
